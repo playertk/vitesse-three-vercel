@@ -34,8 +34,8 @@ onMounted(() => {
    */
   // Sizes:画布尺寸
   const sizes = {
-    width: 800,
-    height: 600,
+    width: window.innerWidth,
+    height: window.innerHeight,
   }
   // 设置相机对象
   // const passrender = THREE.EEffectComposer()
@@ -75,8 +75,8 @@ onMounted(() => {
   controls.target.y = -0.3
 
   /**
- * Animate update
- */
+   * Animate update
+   */
   // 创建时钟类
   // const clock = new THREE.Clock()
 
@@ -100,9 +100,6 @@ onMounted(() => {
 
   tick()
 })
-
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
